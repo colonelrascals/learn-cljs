@@ -16,5 +16,8 @@
     (let [login-form (.getElementById js/document "loginForm")]
       (set! (.-onsubmit login-form) validate-form))))
 
-(set! (.-onload js/window) init
-
+(defn ^:export init []
+  (if (and js/document
+           (.getElementById js/document))
+    (let [login-form (by-id "loginForm")]
+      (set! (.-onsubmit login-form) validate-form))))
