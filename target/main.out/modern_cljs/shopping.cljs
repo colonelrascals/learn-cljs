@@ -1,5 +1,11 @@
 (ns modern-cljs.shopping
-  (:require [domina.core :refer [by-id value set-value!]]))
+  (:require [domina.core :refer [append!
+                                 by-class
+                                 by-id
+                                 destroy!
+                                 set-value!
+                                 value]]
+            [domina.events :refer [listen!]]))
 
 (defn calculate []
   (let [quantity (value (by-id "quantity"))
@@ -12,14 +18,18 @@
                                   (.toFixed 2)))
   false))
 
-(defn init []
-  (if (and js/document
-           (.getElementById js/document))
-    (let [the-form (by-id "shoppingForm")]
-      (set! (.-onsubmit the-form) calculate))))
-
 (defn ^:export init []
-  (if (and js/document
-           (.-getElementById js/document))
-    (let [the-form (by-id "shoppingForm")]
-      (set! (.-onsubmit the-form) calculate))))
+  (when (and js/document
+             (.-getElementById js/document))
+    (listen! (by-id "calc")
+             :click
+             calculate)
+    (listen! (by-id "calc")
+             :mouseover
+             (fn []
+               (append! (by-id "shoppingForm")
+                        "<div class='help'>Click to calculate</div>")))
+    (listen! (by-id "calc")
+             :mouseout
+             (fn []
+               (destroy! (by-class "help")))))) 
