@@ -9,13 +9,6 @@
     (do (js/alert "Yo, complete the form!")
         false)))
 
-(defn init []
-  "No Domina"
-  (if (and js/document
-           (.getElementById js/document))
-    (let [login-form (.getElementById js/document "loginForm")]
-      (set! (.-onsubmit login-form) validate-form))))
-
 (defn ^:export init []
   (if (and js/document
            (.getElementById js/document))

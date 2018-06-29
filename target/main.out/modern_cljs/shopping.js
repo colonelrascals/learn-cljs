@@ -3,6 +3,7 @@ goog.provide('modern_cljs.shopping');
 goog.require('cljs.core');
 goog.require('domina.core');
 goog.require('domina.events');
+goog.require('hiccups.runtime');
 modern_cljs.shopping.calculate = (function modern_cljs$shopping$calculate(){
 var quantity = domina.core.value.call(null,domina.core.by_id.call(null,"quantity"));
 var price = domina.core.value.call(null,domina.core.by_id.call(null,"price"));
@@ -15,7 +16,7 @@ return false;
 modern_cljs.shopping.init = (function modern_cljs$shopping$init(){
 if(cljs.core.truth_((function (){var and__7101__auto__ = document;
 if(cljs.core.truth_(and__7101__auto__)){
-return document.getElementById;
+return (document["getElementById"]);
 } else {
 return and__7101__auto__;
 }
@@ -23,7 +24,7 @@ return and__7101__auto__;
 domina.events.listen_BANG_.call(null,domina.core.by_id.call(null,"calc"),new cljs.core.Keyword(null,"click","click",1912301393),modern_cljs.shopping.calculate);
 
 domina.events.listen_BANG_.call(null,domina.core.by_id.call(null,"calc"),new cljs.core.Keyword(null,"mouseover","mouseover",-484272303),(function (){
-return domina.core.append_BANG_.call(null,domina.core.by_id.call(null,"shoppingForm"),"<div class='help'>Click to calculate</div>");
+return domina.core.append_BANG_.call(null,domina.core.by_id.call(null,"shoppingForm"),[cljs.core.str.cljs$core$IFn$_invoke$arity$1("<div class=\"help\">Click here to calculate</div>")].join(''));
 }));
 
 return domina.events.listen_BANG_.call(null,domina.core.by_id.call(null,"calc"),new cljs.core.Keyword(null,"mouseout","mouseout",2049446890),(function (){

@@ -13,21 +13,6 @@ return false;
 }
 });
 modern_cljs.login.init = (function modern_cljs$login$init(){
-
-if(cljs.core.truth_((function (){var and__7101__auto__ = document;
-if(cljs.core.truth_(and__7101__auto__)){
-return document.getElementById();
-} else {
-return and__7101__auto__;
-}
-})())){
-var login_form = document.getElementById("loginForm");
-return login_form.onsubmit = modern_cljs.login.validate_form;
-} else {
-return null;
-}
-});
-modern_cljs.login.init = (function modern_cljs$login$init(){
 if(cljs.core.truth_((function (){var and__7101__auto__ = document;
 if(cljs.core.truth_(and__7101__auto__)){
 return document.getElementById();

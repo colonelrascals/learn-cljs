@@ -13,8 +13,9 @@ goog.addDependency("../adzerk/boot_reload.js", ['adzerk.boot_reload'], ['cljs.co
 goog.addDependency("../domina/support.js", ['domina.support'], ['goog.dom', 'cljs.core', 'goog.events']);
 goog.addDependency("../domina/core.js", ['domina.core'], ['goog.dom.forms', 'goog.dom', 'goog.dom.classes', 'goog.string', 'cljs.core', 'domina.support', 'goog.style', 'clojure.string', 'goog.events', 'goog.dom.xml']);
 goog.addDependency("../modern_cljs/login.js", ['modern_cljs.login'], ['domina.core', 'cljs.core']);
+goog.addDependency("../hiccups/runtime.js", ['hiccups.runtime'], ['cljs.core', 'clojure.string']);
 goog.addDependency("../domina/events.js", ['domina.events'], ['domina.core', 'cljs.core', 'goog.object', 'goog.events']);
-goog.addDependency("../modern_cljs/shopping.js", ['modern_cljs.shopping'], ['domina.core', 'cljs.core', 'domina.events']);
+goog.addDependency("../modern_cljs/shopping.js", ['modern_cljs.shopping'], ['domina.core', 'hiccups.runtime', 'cljs.core', 'domina.events']);
 goog.addDependency("../cljs/spec/impl/gen.js", ['cljs.spec.impl.gen'], ['cljs.core']);
 goog.addDependency("../clojure/walk.js", ['clojure.walk'], ['cljs.core']);
 goog.addDependency("../cljs/spec.js", ['cljs.spec'], ['cljs.core', 'goog.object', 'cljs.spec.impl.gen', 'clojure.string', 'clojure.walk']);
