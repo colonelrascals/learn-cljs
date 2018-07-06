@@ -8,11 +8,11 @@ modern_cljs.login.validate_email = (function modern_cljs$login$validate_email(em
 domina.core.destroy_BANG_.call(null,domina.core.by_class.call(null,"email"));
 
 if(cljs.core.not.call(null,cljs.core.re_matches.call(null,cljs.core.re_pattern.call(null,domina.core.attr.call(null,email,new cljs.core.Keyword(null,"pattern","pattern",242135423))),domina.core.value.call(null,email)))){
-domina.core.prepend_BANG_.call(null,domina.core.by_id.call(null,"loginForm"),[cljs.core.str.cljs$core$IFn$_invoke$arity$1((function (){var attrs12020 = domina.core.attr.call(null,email,new cljs.core.Keyword(null,"title","title",636505583));
-if(cljs.core.map_QMARK_.call(null,attrs12020)){
-return [cljs.core.str.cljs$core$IFn$_invoke$arity$1("<div"),cljs.core.str.cljs$core$IFn$_invoke$arity$1(hiccups.runtime.render_attr_map.call(null,cljs.core.merge.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),null,new cljs.core.Keyword(null,"class","class",-2030961996),"help email"], null),attrs12020))),cljs.core.str.cljs$core$IFn$_invoke$arity$1(">"),cljs.core.str.cljs$core$IFn$_invoke$arity$1("</div>")].join('');
+domina.core.prepend_BANG_.call(null,domina.core.by_id.call(null,"loginForm"),[cljs.core.str.cljs$core$IFn$_invoke$arity$1((function (){var attrs12041 = domina.core.attr.call(null,email,new cljs.core.Keyword(null,"title","title",636505583));
+if(cljs.core.map_QMARK_.call(null,attrs12041)){
+return [cljs.core.str.cljs$core$IFn$_invoke$arity$1("<div"),cljs.core.str.cljs$core$IFn$_invoke$arity$1(hiccups.runtime.render_attr_map.call(null,cljs.core.merge.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),null,new cljs.core.Keyword(null,"class","class",-2030961996),"help email"], null),attrs12041))),cljs.core.str.cljs$core$IFn$_invoke$arity$1(">"),cljs.core.str.cljs$core$IFn$_invoke$arity$1("</div>")].join('');
 } else {
-return [cljs.core.str.cljs$core$IFn$_invoke$arity$1("<div class=\"help email\">"),cljs.core.str.cljs$core$IFn$_invoke$arity$1(hiccups.runtime.render_html.call(null,attrs12020)),cljs.core.str.cljs$core$IFn$_invoke$arity$1("</div>")].join('');
+return [cljs.core.str.cljs$core$IFn$_invoke$arity$1("<div class=\"help email\">"),cljs.core.str.cljs$core$IFn$_invoke$arity$1(hiccups.runtime.render_html.call(null,attrs12041)),cljs.core.str.cljs$core$IFn$_invoke$arity$1("</div>")].join('');
 }
 })())].join(''));
 
@@ -25,11 +25,11 @@ modern_cljs.login.validate_password = (function modern_cljs$login$validate_passw
 domina.core.destroy_BANG_.call(null,domina.core.by_class.call(null,"password"));
 
 if(cljs.core.not.call(null,cljs.core.re_matches.call(null,cljs.core.re_pattern.call(null,domina.core.attr.call(null,password,new cljs.core.Keyword(null,"pattern","pattern",242135423))),domina.core.value.call(null,password)))){
-domina.core.append_BANG_.call(null,domina.core.by_id.call(null,"loginForm"),[cljs.core.str.cljs$core$IFn$_invoke$arity$1((function (){var attrs12022 = domina.core.attr.call(null,password,new cljs.core.Keyword(null,"title","title",636505583));
-if(cljs.core.map_QMARK_.call(null,attrs12022)){
-return [cljs.core.str.cljs$core$IFn$_invoke$arity$1("<div"),cljs.core.str.cljs$core$IFn$_invoke$arity$1(hiccups.runtime.render_attr_map.call(null,cljs.core.merge.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),null,new cljs.core.Keyword(null,"class","class",-2030961996),"help password"], null),attrs12022))),cljs.core.str.cljs$core$IFn$_invoke$arity$1(">"),cljs.core.str.cljs$core$IFn$_invoke$arity$1("</div>")].join('');
+domina.core.append_BANG_.call(null,domina.core.by_id.call(null,"loginForm"),[cljs.core.str.cljs$core$IFn$_invoke$arity$1((function (){var attrs12043 = domina.core.attr.call(null,password,new cljs.core.Keyword(null,"title","title",636505583));
+if(cljs.core.map_QMARK_.call(null,attrs12043)){
+return [cljs.core.str.cljs$core$IFn$_invoke$arity$1("<div"),cljs.core.str.cljs$core$IFn$_invoke$arity$1(hiccups.runtime.render_attr_map.call(null,cljs.core.merge.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),null,new cljs.core.Keyword(null,"class","class",-2030961996),"help password"], null),attrs12043))),cljs.core.str.cljs$core$IFn$_invoke$arity$1(">"),cljs.core.str.cljs$core$IFn$_invoke$arity$1("</div>")].join('');
 } else {
-return [cljs.core.str.cljs$core$IFn$_invoke$arity$1("<div class=\"help password\">"),cljs.core.str.cljs$core$IFn$_invoke$arity$1(hiccups.runtime.render_html.call(null,attrs12022)),cljs.core.str.cljs$core$IFn$_invoke$arity$1("</div>")].join('');
+return [cljs.core.str.cljs$core$IFn$_invoke$arity$1("<div class=\"help password\">"),cljs.core.str.cljs$core$IFn$_invoke$arity$1(hiccups.runtime.render_html.call(null,attrs12043)),cljs.core.str.cljs$core$IFn$_invoke$arity$1("</div>")].join('');
 }
 })())].join(''));
 
