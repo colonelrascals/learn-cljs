@@ -1,0 +1,3 @@
+(require '[modern-cls.remotes :as r])
+(require '[modern-cljs.remotes :as r])
+(r/calculate 10 12.24 8.24 5)

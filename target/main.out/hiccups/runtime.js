@@ -26,11 +26,11 @@ hiccups.runtime.xml_mode_QMARK_ = (function hiccups$runtime$xml_mode_QMARK_(){
 return cljs.core._EQ_.call(null,hiccups.runtime._STAR_html_mode_STAR_,new cljs.core.Keyword(null,"xml","xml",-1170142052));
 });
 hiccups.runtime.in_mode = (function hiccups$runtime$in_mode(mode,f){
-var _STAR_html_mode_STAR_11703 = hiccups.runtime._STAR_html_mode_STAR_;
+var _STAR_html_mode_STAR_9289 = hiccups.runtime._STAR_html_mode_STAR_;
 hiccups.runtime._STAR_html_mode_STAR_ = mode;
 
 try{return f.call(null);
-}finally {hiccups.runtime._STAR_html_mode_STAR_ = _STAR_html_mode_STAR_11703;
+}finally {hiccups.runtime._STAR_html_mode_STAR_ = _STAR_html_mode_STAR_9289;
 }});
 /**
  * Change special characters into HTML character entities.
@@ -49,10 +49,10 @@ return ">";
 hiccups.runtime.xml_attribute = (function hiccups$runtime$xml_attribute(name,value){
 return [cljs.core.str.cljs$core$IFn$_invoke$arity$1(" "),cljs.core.str.cljs$core$IFn$_invoke$arity$1(hiccups.runtime.as_str.call(null,name)),cljs.core.str.cljs$core$IFn$_invoke$arity$1("=\""),cljs.core.str.cljs$core$IFn$_invoke$arity$1(hiccups.runtime.escape_html.call(null,value)),cljs.core.str.cljs$core$IFn$_invoke$arity$1("\"")].join('');
 });
-hiccups.runtime.render_attribute = (function hiccups$runtime$render_attribute(p__11704){
-var vec__11708 = p__11704;
-var name = cljs.core.nth.call(null,vec__11708,(0),null);
-var value = cljs.core.nth.call(null,vec__11708,(1),null);
+hiccups.runtime.render_attribute = (function hiccups$runtime$render_attribute(p__9290){
+var vec__9294 = p__9290;
+var name = cljs.core.nth.call(null,vec__9294,(0),null);
+var value = cljs.core.nth.call(null,vec__9294,(1),null);
 if(value === true){
 if(cljs.core.truth_(hiccups.runtime.xml_mode_QMARK_.call(null))){
 return hiccups.runtime.xml_attribute.call(null,name,name);
@@ -74,23 +74,23 @@ return cljs.core.apply.call(null,cljs.core.str,cljs.core.sort.call(null,cljs.cor
 /**
  * Ensure a tag vector is of the form [tag-name attrs content].
  */
-hiccups.runtime.normalize_element = (function hiccups$runtime$normalize_element(p__11711){
-var vec__11718 = p__11711;
-var seq__11719 = cljs.core.seq.call(null,vec__11718);
-var first__11720 = cljs.core.first.call(null,seq__11719);
-var seq__11719__$1 = cljs.core.next.call(null,seq__11719);
-var tag = first__11720;
-var content = seq__11719__$1;
+hiccups.runtime.normalize_element = (function hiccups$runtime$normalize_element(p__9297){
+var vec__9304 = p__9297;
+var seq__9305 = cljs.core.seq.call(null,vec__9304);
+var first__9306 = cljs.core.first.call(null,seq__9305);
+var seq__9305__$1 = cljs.core.next.call(null,seq__9305);
+var tag = first__9306;
+var content = seq__9305__$1;
 if(!(((tag instanceof cljs.core.Keyword)) || ((tag instanceof cljs.core.Symbol)) || (typeof tag === 'string'))){
 throw [cljs.core.str.cljs$core$IFn$_invoke$arity$1(tag),cljs.core.str.cljs$core$IFn$_invoke$arity$1(" is not a valid tag name")].join('');
 } else {
 }
 
-var vec__11721 = cljs.core.re_matches.call(null,hiccups.runtime.re_tag,hiccups.runtime.as_str.call(null,tag));
-var _ = cljs.core.nth.call(null,vec__11721,(0),null);
-var tag__$1 = cljs.core.nth.call(null,vec__11721,(1),null);
-var id = cljs.core.nth.call(null,vec__11721,(2),null);
-var class$ = cljs.core.nth.call(null,vec__11721,(3),null);
+var vec__9307 = cljs.core.re_matches.call(null,hiccups.runtime.re_tag,hiccups.runtime.as_str.call(null,tag));
+var _ = cljs.core.nth.call(null,vec__9307,(0),null);
+var tag__$1 = cljs.core.nth.call(null,vec__9307,(1),null);
+var id = cljs.core.nth.call(null,vec__9307,(2),null);
+var class$ = cljs.core.nth.call(null,vec__9307,(3),null);
 var tag_attrs = new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),id,new cljs.core.Keyword(null,"class","class",-2030961996),(cljs.core.truth_(class$)?clojure.string.replace.call(null,class$,"."," "):null)], null);
 var map_attrs = cljs.core.first.call(null,content);
 if(cljs.core.map_QMARK_.call(null,map_attrs)){
@@ -103,10 +103,10 @@ return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMP
  * Render a tag vector as a HTML element.
  */
 hiccups.runtime.render_element = (function hiccups$runtime$render_element(element){
-var vec__11727 = hiccups.runtime.normalize_element.call(null,element);
-var tag = cljs.core.nth.call(null,vec__11727,(0),null);
-var attrs = cljs.core.nth.call(null,vec__11727,(1),null);
-var content = cljs.core.nth.call(null,vec__11727,(2),null);
+var vec__9313 = hiccups.runtime.normalize_element.call(null,element);
+var tag = cljs.core.nth.call(null,vec__9313,(0),null);
+var attrs = cljs.core.nth.call(null,vec__9313,(1),null);
+var content = cljs.core.nth.call(null,vec__9313,(2),null);
 if(cljs.core.truth_((function (){var or__7113__auto__ = content;
 if(cljs.core.truth_(or__7113__auto__)){
 return or__7113__auto__;

@@ -12,10 +12,15 @@ goog.addDependency("../adzerk/boot_reload/client.js", ['adzerk.boot_reload.clien
 goog.addDependency("../adzerk/boot_reload.js", ['adzerk.boot_reload'], ['cljs.core', 'adzerk.boot_reload.client']);
 goog.addDependency("../domina/support.js", ['domina.support'], ['goog.dom', 'cljs.core', 'goog.events']);
 goog.addDependency("../domina/core.js", ['domina.core'], ['goog.dom.forms', 'goog.dom', 'goog.dom.classes', 'goog.string', 'cljs.core', 'domina.support', 'goog.style', 'clojure.string', 'goog.events', 'goog.dom.xml']);
-goog.addDependency("../modern_cljs/login.js", ['modern_cljs.login'], ['domina.core', 'cljs.core']);
 goog.addDependency("../hiccups/runtime.js", ['hiccups.runtime'], ['cljs.core', 'clojure.string']);
 goog.addDependency("../domina/events.js", ['domina.events'], ['domina.core', 'cljs.core', 'goog.object', 'goog.events']);
-goog.addDependency("../modern_cljs/shopping.js", ['modern_cljs.shopping'], ['domina.core', 'hiccups.runtime', 'cljs.core', 'domina.events']);
+goog.addDependency("../modern_cljs/login.js", ['modern_cljs.login'], ['domina.core', 'hiccups.runtime', 'cljs.core', 'domina.events']);
+goog.addDependency("../shoreleave/remotes/protocols.js", ['shoreleave.remotes.protocols'], ['cljs.core']);
+goog.addDependency("../shoreleave/browser/cookies.js", ['shoreleave.browser.cookies'], ['goog.net.Cookies', 'goog.string', 'cljs.core']);
+goog.addDependency("../shoreleave/remotes/common.js", ['shoreleave.remotes.common'], ['shoreleave.remotes.protocols', 'goog.string', 'goog.Uri.QueryData', 'cljs.core', 'shoreleave.browser.cookies', 'goog.net.EventType', 'goog.structs', 'clojure.string']);
+goog.addDependency("../shoreleave/remotes/xhr.js", ['shoreleave.remotes.xhr'], ['goog.net.XhrIo', 'shoreleave.remotes.common', 'cljs.core', 'goog.events']);
+goog.addDependency("../shoreleave/remotes/http_rpc.js", ['shoreleave.remotes.http_rpc'], ['cljs.core', 'shoreleave.remotes.xhr', 'cljs.reader']);
+goog.addDependency("../modern_cljs/shopping.js", ['modern_cljs.shopping'], ['domina.core', 'hiccups.runtime', 'shoreleave.remotes.http_rpc', 'cljs.core', 'domina.events', 'cljs.reader']);
 goog.addDependency("../cljs/spec/impl/gen.js", ['cljs.spec.impl.gen'], ['cljs.core']);
 goog.addDependency("../clojure/walk.js", ['clojure.walk'], ['cljs.core']);
 goog.addDependency("../cljs/spec.js", ['cljs.spec'], ['cljs.core', 'goog.object', 'cljs.spec.impl.gen', 'clojure.string', 'clojure.walk']);
