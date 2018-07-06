@@ -19,6 +19,7 @@
                  [org.clojars.magomimmo/shoreleave-remote "0.3.1"]
                  [javax.servlet/javax.servlet-api "3.1.0"]
                  [org.clojars.magomimmo/valip "0.4.0-SNAPSHOT"]
+                 [enlive "1.1.16"]
                  ])
 
 (require '[adzerk.boot-cljs :refer [cljs]]
@@ -31,7 +32,7 @@
   "Launch immediate feedback dev environment"
   []
   (comp
-   (serve :handler 'modern-cljs.remotes/app           ;; ring handler
+   (serve :handler 'modern-cljs.core/app           ;; ring handler
           :resource-root "target"                      ;; root classpath
           :reload true)                                ;; reload ns
    (watch)

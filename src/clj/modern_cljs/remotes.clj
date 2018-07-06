@@ -1,13 +1,12 @@
 (ns modern-cljs.remotes
-  (:require [modern-cljs.core :refer [handler]]
-            [compojure.handler :refer [site]]
+  (:require [compojure.handler :refer [site]]
             [shoreleave.middleware.rpc :refer [defremote wrap-rpc]]
             [modern-cljs.login.validators :as v]))
 
 (defremote calculate [quantity price tax discount]
-  (-> (* quantity price)
-      (* (+ 1 (/ tax 100)))
-      (- discount)))
+  (-> (* (read-string quantity) (read-string price))
+      (* (+ 1 (/ (read-string tax) 100)))
+      (- (read-string discount))))
 
 (def app (-> (var handler)
              (wrap-rpc)
