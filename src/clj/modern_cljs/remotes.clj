@@ -8,7 +8,5 @@
       (* (+ 1 (/ (read-string tax) 100)))
       (- (read-string discount))))
 
-(def app (-> (var handler)
-             (wrap-rpc)
-             (site)))
-
+(defremote email-domain-errors [email]
+  (v/email-domain-errors email))
