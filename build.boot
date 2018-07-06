@@ -1,5 +1,5 @@
 (set-env!
- :source-paths #{"src/clj" "src/cljs"}
+ :source-paths #{"src/clj" "src/cljs" "src/cljc"}
  :resource-paths #{"html"}
 
  :dependencies '[
@@ -18,6 +18,7 @@
                  [org.clojars.magomimmo/shoreleave-remote-ring "0.3.3"]
                  [org.clojars.magomimmo/shoreleave-remote "0.3.1"]
                  [javax.servlet/javax.servlet-api "3.1.0"]
+                 [org.clojars.magomimmo/valip "0.4.0-SNAPSHOT"]
                  ])
 
 (require '[adzerk.boot-cljs :refer [cljs]]

@@ -31,9 +31,9 @@ if(typeof route === 'string'){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, ["GET",route], null);
 } else {
 if(cljs.core.vector_QMARK_.call(null,route)){
-var vec__11942 = route;
-var m = cljs.core.nth.call(null,vec__11942,(0),null);
-var u = cljs.core.nth.call(null,vec__11942,(1),null);
+var vec__11989 = route;
+var m = cljs.core.nth.call(null,vec__11989,(0),null);
+var u = cljs.core.nth.call(null,vec__11989,(1),null);
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [shoreleave.remotes.common.__GT_url_method.call(null,m),u], null);
 } else {
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, ["GET",route], null);

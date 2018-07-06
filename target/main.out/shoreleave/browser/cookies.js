@@ -108,35 +108,35 @@ return cljs.core.map.call(null,cljs.core.vector,c__$1.getKeys(),c__$1.getValues(
 goog.net.Cookies.prototype.cljs$core$IFn$ = cljs.core.PROTOCOL_SENTINEL;
 
 goog.net.Cookies.prototype.call = (function() {
-var G__11922 = null;
-var G__11922__2 = (function (self__,k){
+var G__11969 = null;
+var G__11969__2 = (function (self__,k){
 var self____$1 = this;
 var c = self____$1;
 return cljs.core._lookup.call(null,c,k);
 });
-var G__11922__3 = (function (self__,k,not_found){
+var G__11969__3 = (function (self__,k,not_found){
 var self____$1 = this;
 var c = self____$1;
 return cljs.core._lookup.call(null,c,k,not_found);
 });
-G__11922 = function(self__,k,not_found){
+G__11969 = function(self__,k,not_found){
 switch(arguments.length){
 case 2:
-return G__11922__2.call(this,self__,k);
+return G__11969__2.call(this,self__,k);
 case 3:
-return G__11922__3.call(this,self__,k,not_found);
+return G__11969__3.call(this,self__,k,not_found);
 }
 throw(new Error('Invalid arity: ' + arguments.length));
 };
-G__11922.cljs$core$IFn$_invoke$arity$2 = G__11922__2;
-G__11922.cljs$core$IFn$_invoke$arity$3 = G__11922__3;
-return G__11922;
+G__11969.cljs$core$IFn$_invoke$arity$2 = G__11969__2;
+G__11969.cljs$core$IFn$_invoke$arity$3 = G__11969__3;
+return G__11969;
 })()
 ;
 
-goog.net.Cookies.prototype.apply = (function (self__,args11921){
+goog.net.Cookies.prototype.apply = (function (self__,args11968){
 var self____$1 = this;
-return self____$1.call.apply(self____$1,[self____$1].concat(cljs.core.aclone.call(null,args11921)));
+return self____$1.call.apply(self____$1,[self____$1].concat(cljs.core.aclone.call(null,args11968)));
 });
 
 goog.net.Cookies.prototype.cljs$core$IFn$_invoke$arity$1 = (function (k){
@@ -150,23 +150,23 @@ return cljs.core._lookup.call(null,c,k,not_found);
 });
 shoreleave.browser.cookies.cookies = (new goog.net.Cookies(document));
 shoreleave.browser.cookies.as_hash_map = (function shoreleave$browser$cookies$as_hash_map(var_args){
-var args11923 = [];
-var len__8226__auto___11926 = arguments.length;
-var i__8227__auto___11927 = (0);
+var args11970 = [];
+var len__8226__auto___11973 = arguments.length;
+var i__8227__auto___11974 = (0);
 while(true){
-if((i__8227__auto___11927 < len__8226__auto___11926)){
-args11923.push((arguments[i__8227__auto___11927]));
+if((i__8227__auto___11974 < len__8226__auto___11973)){
+args11970.push((arguments[i__8227__auto___11974]));
 
-var G__11928 = (i__8227__auto___11927 + (1));
-i__8227__auto___11927 = G__11928;
+var G__11975 = (i__8227__auto___11974 + (1));
+i__8227__auto___11974 = G__11975;
 continue;
 } else {
 }
 break;
 }
 
-var G__11925 = args11923.length;
-switch (G__11925) {
+var G__11972 = args11970.length;
+switch (G__11972) {
 case 0:
 return shoreleave.browser.cookies.as_hash_map.cljs$core$IFn$_invoke$arity$0();
 
@@ -176,7 +176,7 @@ return shoreleave.browser.cookies.as_hash_map.cljs$core$IFn$_invoke$arity$1((arg
 
 break;
 default:
-throw (new Error([cljs.core.str.cljs$core$IFn$_invoke$arity$1("Invalid arity: "),cljs.core.str.cljs$core$IFn$_invoke$arity$1(args11923.length)].join('')));
+throw (new Error([cljs.core.str.cljs$core$IFn$_invoke$arity$1("Invalid arity: "),cljs.core.str.cljs$core$IFn$_invoke$arity$1(args11970.length)].join('')));
 
 }
 });
@@ -195,23 +195,23 @@ shoreleave.browser.cookies.as_hash_map.cljs$lang$maxFixedArity = 1;
  * Returns a boolean, true if cookies are currently enabled for the browser
  */
 shoreleave.browser.cookies.cookies_enabled_QMARK_ = (function shoreleave$browser$cookies$cookies_enabled_QMARK_(var_args){
-var args11930 = [];
-var len__8226__auto___11933 = arguments.length;
-var i__8227__auto___11934 = (0);
+var args11977 = [];
+var len__8226__auto___11980 = arguments.length;
+var i__8227__auto___11981 = (0);
 while(true){
-if((i__8227__auto___11934 < len__8226__auto___11933)){
-args11930.push((arguments[i__8227__auto___11934]));
+if((i__8227__auto___11981 < len__8226__auto___11980)){
+args11977.push((arguments[i__8227__auto___11981]));
 
-var G__11935 = (i__8227__auto___11934 + (1));
-i__8227__auto___11934 = G__11935;
+var G__11982 = (i__8227__auto___11981 + (1));
+i__8227__auto___11981 = G__11982;
 continue;
 } else {
 }
 break;
 }
 
-var G__11932 = args11930.length;
-switch (G__11932) {
+var G__11979 = args11977.length;
+switch (G__11979) {
 case 0:
 return shoreleave.browser.cookies.cookies_enabled_QMARK_.cljs$core$IFn$_invoke$arity$0();
 
@@ -221,7 +221,7 @@ return shoreleave.browser.cookies.cookies_enabled_QMARK_.cljs$core$IFn$_invoke$a
 
 break;
 default:
-throw (new Error([cljs.core.str.cljs$core$IFn$_invoke$arity$1("Invalid arity: "),cljs.core.str.cljs$core$IFn$_invoke$arity$1(args11930.length)].join('')));
+throw (new Error([cljs.core.str.cljs$core$IFn$_invoke$arity$1("Invalid arity: "),cljs.core.str.cljs$core$IFn$_invoke$arity$1(args11977.length)].join('')));
 
 }
 });

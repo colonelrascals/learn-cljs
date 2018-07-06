@@ -3,8 +3,6 @@
             [compojure.route :refer [not-found files resources]]
             [modern-cljs.login :refer [authenticate-user]]))
 
-(declare authenticate-user)
-
 (defroutes handler
   (GET "/" [] "Hello from Compojure!")
   (files "/" {:root "target"})
